@@ -3,3 +3,7 @@ build() {
   tar -zxvf alist.tar.gz
   rm -f alist.tar.gz
 }
+
+handler() {
+  ./alist server
+  }
