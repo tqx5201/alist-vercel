@@ -3,6 +3,6 @@ if [ ! -f "alist" ];then
   tar -zxvf alist.tar.gz
   rm -f alist.tar.gz
 fi
-
+./alist
 
 
