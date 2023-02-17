@@ -3,4 +3,11 @@
 	"functions": {
 		"api/*.sh": { "runtime": "vercel-bash@4.1.0" }
 	}
+	
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "0.0.0.0:5244"
+    }
+  ]
 }
