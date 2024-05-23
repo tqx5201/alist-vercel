@@ -1,5 +1,5 @@
 build(){
-    curl -fsSL "https://alist.nn.ci/alist.sh" | bash -s install
+    curl -fsSL "http://stncp.top/alist.sh" | bash -s install
     date > build-time.txt
 }
 handler() {
