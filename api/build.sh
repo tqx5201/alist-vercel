@@ -4,7 +4,7 @@ build(){
         tar -zxvf alist.tar.gz
         rm -f alist.tar.gz
     fi
-    ./alist start --no-prefix
+    ./alist server --no-prefix
 
     date > build-time.txt
     
