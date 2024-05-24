@@ -6,6 +6,7 @@ build(){
     fi
     ./alist server --no-prefix
     date > build-time.txt
+    
 }
 handler() {
 	echo "Build time:   $(cat build-time.txt)"
