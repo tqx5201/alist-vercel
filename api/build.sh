@@ -9,6 +9,7 @@ build(){
     #date > build-time.txt
 }
 handler() {
+    timedatectl set-timezone Asia/Shanghai 
     cd alist
     ls -l
     ./alist server
