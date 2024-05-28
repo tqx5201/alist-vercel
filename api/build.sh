@@ -4,13 +4,15 @@ build(){
         tar -zxvf alist.tar.gz
         rm -f alist.tar.gz
     fi
-    current_path=$(pwd) echo "当前路径是:$current_path"
+    current_path=$(pwd) 
+    echo "当前路径是:$current_path"
     #curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
     #ls -l > build-time.txt
     #date > build-time.txt
 }
 handler() {
-    current_path=$(pwd) echo "当前路径是:$current_path"
+    current_path=$(pwd) 
+    echo "当前路径是:$current_path"
     timedatectl set-timezone Asia/Shanghai 
     cd alist
     ls -l
