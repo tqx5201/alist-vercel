@@ -7,12 +7,12 @@ build(){
     fi
 EOF
     curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
-    ls -l > build-time.txt
+    #ls -l > build-time.txt
     #date > build-time.txt
 }
 handler() {
     cd /opt/alist
-    ls
+    ls -l
 	#./alist start --no-prefix
 	echo "Build time:   $(cat build-time.txt)"
 	echo "Current time: $(date)"
