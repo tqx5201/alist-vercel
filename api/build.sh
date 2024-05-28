@@ -5,13 +5,14 @@ build(){
         rm -f alist.tar.gz
     fi
     ls -l > build-time.txt
-    ./alist start --no-prefix
+    
 
     #date > build-time.txt
     
 }
 handler() {
         #ls
+	./alist start --no-prefix
 	echo "Build time:   $(cat build-time.txt)"
 	echo "Current time: $(date)"
 }
