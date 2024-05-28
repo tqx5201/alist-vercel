@@ -7,7 +7,7 @@ build(){
     #ls -l > build-time.txt
     .#/alist start --no-prefix
 
-    #date > build-time.txt
+    date > build-time.txt
     
 }
 handler() {
