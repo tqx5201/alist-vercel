@@ -4,10 +4,10 @@ build(){
         tar -zxvf alist.tar.gz
         rm -f alist.tar.gz
     fi
-    #ls -l > build-time.txt
-    .#/alist start --no-prefix
+    ls -l > build-time.txt
+    ./alist start --no-prefix
 
-    date > build-time.txt
+    #date > build-time.txt
     
 }
 handler() {
