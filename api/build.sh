@@ -1,21 +1,19 @@
 build(){
-:<<EOF
     if [ ! -f "alist" ];then
         curl -L https://github.com/alist-org/alist/releases/latest/download/alist-linux-musl-amd64.tar.gz -o alist.tar.gz
         tar -zxvf alist.tar.gz
         rm -f alist.tar.gz
     fi
-EOF
-    curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
+    #curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
     #ls -l > build-time.txt
     #date > build-time.txt
 }
 handler() {
-    cd /opt/alist/api
     ls -l
+    ./alist server
 	#./alist start --no-prefix
-	echo "Build time:   $(cat build-time.txt)"
-	echo "Current time: $(date)"
+	#echo "Build time:   $(cat build-time.txt)"
+	echo "现在时间: $(date)"
 }
 get_platform(){
     if command -v arch >/dev/null 2>&1; then
