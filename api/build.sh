@@ -9,6 +9,7 @@ build(){
     #date > build-time.txt
 }
 handler() {
+    cd alist
     ls -l
     ./alist server
 	#./alist start --no-prefix
