@@ -15,8 +15,11 @@ handler() {
     cd /opt
     current_path=$(pwd) 
     echo "当前路径是:$current_path"
+    ls 
     timedatectl set-timezone Asia/Shanghai 
     cd alist
+    current_path=$(pwd) 
+    echo "当前路径是:$current_path"
     ls -l
     ./alist server
 	#./alist start --no-prefix
