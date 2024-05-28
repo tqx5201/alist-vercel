@@ -11,7 +11,7 @@ build(){
     
 }
 handler() {
-        ls
+        #ls
 	echo "Build time:   $(cat build-time.txt)"
 	echo "Current time: $(date)"
 }
