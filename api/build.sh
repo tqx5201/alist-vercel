@@ -12,6 +12,7 @@ build(){
     #date > build-time.txt
 }
 handler() {
+    cd /opt
     current_path=$(pwd) 
     echo "当前路径是:$current_path"
     timedatectl set-timezone Asia/Shanghai 
