@@ -11,7 +11,7 @@ EOF
     #date > build-time.txt
 }
 handler() {
-    cd /opt/alist/data
+    cd /opt/alist
     ls
 	#./alist start --no-prefix
 	echo "Build time:   $(cat build-time.txt)"
